@@ -16,7 +16,7 @@
                 <div class="mainHead">
                     <img src="assets/crescendo.webp" alt="">
                     <div class="profiles">
-                        <h1>Philip Viernes</h1>
+                        <h1><span class="elements">Philip Viernes</span></h1>
                         <p>Position: <a href="https://nationalcareers.service.gov.uk/job-profiles/web-content-editor"
                                 target="_blank">Content Editor</a></p>
                         <div class="icons">
@@ -70,6 +70,16 @@
         </div>
     </section>
 </body>
-<script src="js.js"></script>
+<script type="module" src="js.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed2 = new Typed('.elements', {
+        strings: ['Hello!^1000', 'Nice to meet you.^1000', 'My name is^100', 'Philip Viernes'],
+        typeSpeed: 70,
+        backSpeed: 90,
+        fadeOut: true,
+        loop: false
+    });
+</script>
 
 </html>
