@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body id="body">
     <section class="sectionMain">
         <div class="outer-container">
             <div class="inner-container">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="profileImage">
                     <a href="https://www.crescendocollective.com/">
-                        <img src="assets/1705318599146.jpeg" alt="">
+                        <img src="assets/file.png" alt="">
                     </a>
                 </div>
             </div>
@@ -80,6 +80,25 @@
         fadeOut: true,
         loop: false
     });
+</script>
+<script src="three.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+    VANTA.NET({
+        el: "*",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xd9422d,
+        backgroundColor: 0x1b1a1e,
+        points: 20.00,
+        maxDistance: 25.00,
+        spacing: 17.00
+    })
 </script>
 
 </html>
