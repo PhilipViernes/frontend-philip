@@ -15,6 +15,9 @@ body {
 .sectionMain {
   height: 100vh;
 }
+.elements {
+  font-weight: 500;
+}
 /* Profile details */
 .outer-container {
   display: flex;
@@ -166,7 +169,7 @@ body {
     display: flex;
     justify-content: start;
     padding: 10px;
-    width:auto;
+    width: auto;
   }
   /*Profile image*/
   .profileImage {
