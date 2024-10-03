@@ -31,10 +31,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #101010;
+  background: transparent;
   animation-name: profilecard;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  backdrop-filter: blur(10px);
 }
 @keyframes profilecard {
   0% {
