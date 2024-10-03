@@ -12,13 +12,6 @@ body {
   margin: 0 auto;
   background: #000000;
 }
-.bodyBack {
-  background-color: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 48%,
-    rgba(226, 91, 41, 1) 100%
-  );
-}
 .sectionMain {
   height: 100vh;
 }
@@ -43,7 +36,6 @@ body {
 @keyframes profilecard {
   0% {
     opacity: 0;
-    transform: translate(-100%);
   }
   20% {
     opacity: 0.4;
@@ -91,6 +83,11 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
+}
+.icons svg:hover {
+  transform: scale(1.1);
+  outline: #ffffff solid 4px;
+  border-radius: 20px;
 }
 
 /*Profile image*/
@@ -163,8 +160,13 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem !important;
+    width: 50px;
   }
-
+  .icons {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+  }
   /*Profile image*/
   .profileImage {
     width: 85%;
