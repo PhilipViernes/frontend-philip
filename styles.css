@@ -139,6 +139,7 @@ body {
     align-items: center;
     background: #101010;
     margin: 100px 10px;
+
   }
   .mainHead img {
     margin: 20px 0 0px 50px;
@@ -178,7 +179,7 @@ body {
     width: 85%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
   }
   .profileImage img {
     width: 100%;
