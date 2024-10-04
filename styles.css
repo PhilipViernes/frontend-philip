@@ -178,7 +178,7 @@ body {
     width: 85%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
   }
   .profileImage img {
     width: 100%;
