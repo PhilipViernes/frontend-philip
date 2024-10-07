@@ -16,7 +16,8 @@ body {
 }
 .sectionMain {
   height: 100vh;
-  display:flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .elements {
@@ -25,9 +26,11 @@ body {
 /* Profile details */
 .outer-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inner-container {
-  width: 100%;
+  width: 1280px;
   border: white solid 2px;
   height: 500px;
   border-radius: 20px;
