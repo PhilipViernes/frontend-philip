@@ -11,11 +11,14 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: #000000;
+  display: flex;
+  justify-content: center;
 }
 .sectionMain {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .elements {
   font-weight: 500;
@@ -125,6 +128,7 @@ body {
     width: auto;
     margin: 0 auto;
     background: #000000;
+    display: block;
   }
   .sectionMain {
     height: 100vh;
@@ -143,7 +147,6 @@ body {
     align-items: center;
     background: #101010;
     margin: 100px 10px;
-
   }
   .mainHead img {
     margin: 20px 0 0px 50px;
