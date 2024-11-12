@@ -1,0 +1,318 @@
+.inputSection {
+    height: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: -10%;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+}
+.signUpSection {
+    height: 1000px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+}
+.inputSection .closeForms {
+    align-self: end;
+    position: relative;
+    top: -13.6%;
+    right:-3%;
+    cursor: pointer;
+}
+.signUpSection .closeForms {
+    align-self: end;
+    position: relative;
+    top: -3%;
+    right:-3%;
+    cursor: pointer;
+}
+.signUpSection .container {
+    height:95vh;
+}
+form {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+}
+input {
+    color: white;
+}
+label {
+    color: white;
+}
+.container {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: transparent;
+    height: 500px;
+    backdrop-filter:blur(80px);
+    box-shadow: 0 0 60px #e25b29;
+}
+.container label {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.signUpSection .container label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container input[type="email"],
+input[type="password"],
+input[name="fname"],
+input[name="LastName"],
+input[name="Username"],
+input[name="EmailSignUp"],
+input[name="PassWordSignUp"]{ 
+    width: 100%;
+    padding: 15px 5px;
+    margin:10px 0;
+    border-radius: 10px;
+    border:white 2px solid;
+    color: white;
+    background-color: transparent;
+}
+.container input[type="email"]:focus,
+input[type="password"]:focus,
+input[name="fname"]:focus,
+input[name="LastName"]:focus,
+input[name="Username"]:focus,
+input[name="EmailSignUp"]:focus,
+input[name="PassWordSignUp"]:focus {
+    width: 100%;
+    padding: 10px 5px;
+    margin:10px 0;
+    border-radius: 10px;
+    border: #e25b29 2px solid;
+    filter: drop-shadow(
+    0 0 10px #e25b29
+    );
+    outline: none;
+    z-index: 20;
+    color: white;
+    transition: 0.1s;
+}
+.container input[type="email"]:valid,  input[type="password"]:valid {
+    background-color: transparent;
+}
+.formsbuttons {
+    display: flex;
+    width: 100%;
+    gap:10px
+}
+input[type="submit"], .cancelForms {
+    width: 50%;
+    padding: 12px;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+    border: none;
+    align-self: center;
+    background: transparent;
+    border: white solid 1px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+input[type="submit"]:hover, .cancelForms:hover {
+    width: 50%;
+    padding: 15px;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+    border: none;
+    align-self: center;
+    color: white;
+    background:#e25b29;
+    filter:drop-shadow(5px 0 5px #e25b29)
+}
+input[type="submit"]:hover, .cancelForms:hover {
+    width: 50%;
+    padding: 15px;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+    border: none;
+    align-self: center;
+    color: white;
+    background:#e25b29;
+    filter:drop-shadow(5px 0 5px #e25b29);
+    border: solid 1px transparent;
+}
+.innerWrapper {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.redirectSignup {
+    text-align: center;
+}
+.redirectSignup a {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile CSS */
+@media (max-width:767px) {
+    .inputSection {
+        height: 100vh;
+        backdrop-filter: blur(100px);
+        display: none;
+        position: absolute;
+        top: 0%;
+    }
+    .signUpSection {
+        height: 125vh;
+        backdrop-filter: blur(100px);
+        display: none;
+        overflow: scroll;
+    }
+    .closeForms {
+        align-self: end;
+        position: relative;
+        top: -5%;
+        right: -38%;
+    }
+    form {
+        color: white;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: start;
+    }
+    input {
+        color: white;
+    }
+    label {
+        color: white;
+    }
+    .container {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        border: transparent;
+        height: 60vh;
+    }
+    .container label {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .container input[type="email"],
+    input[type="password"],
+    input[name="fname"],
+    input[name="LastName"],
+    input[name="Username"],
+    input[name="EmailSignUp"],
+    input[name="PassWordSignUp"]{
+        width: 90%;
+        padding: 15px 5px;
+        margin:10px 0;
+        border-radius: 10px;
+        border:white 2px solid;
+        color: white;
+        background-color: transparent;
+    }
+    .container input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[name="fname"]:focus,
+    input[name="LastName"]:focus,
+    input[name="Username"]:focus,
+    input[name="EmailSignUp"]:focus,
+    input[name="PassWordSignUp"]:focus {
+        width: 90%;
+        padding: 15px 5px;
+        margin:10px 0;
+        border-radius: 10px;
+        border: #e25b29 2px solid;
+        filter: drop-shadow(
+        0 0 10px #e25b29
+        );
+        outline: none;
+        z-index: 20;
+        color: white;
+        transition: 0.1s;
+    }
+    input[type="submit"],.cancelForms {
+        width: 50%;
+        padding: 15px;
+        margin: 20px 0 0 0;
+        box-sizing: border-box;
+        border: none;
+        align-self: center;
+        background: black;
+        border: white solid 1px;
+        color: white;
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    input[type="submit"]:hover,.cancelForms:hover {
+        width: 50%;
+        padding: 15px;
+        margin: 20px 0 0 0;
+        box-sizing: border-box;
+        border: none;
+        align-self: center;
+        color: white;
+        background:#e25b29;
+        filter:drop-shadow(5px 0 5px #e25b29)
+    }
+    input[type="submit"]:hover,.cancelForms:hover{
+        width: 50%;
+        padding: 15px;
+        margin: 20px 0 0 0;
+        box-sizing: border-box;
+        border: none;
+        align-self: center;
+        color: white;
+        background:#e25b29;
+        filter:drop-shadow(5px 0 5px #e25b29);
+        border: solid 1px transparent;
+    }
+    .innerWrapper {
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .redirectSignup {
+        text-align: center;
+    }
+    .redirectSignup a {
+        font-weight: 500;
+    }
+}
