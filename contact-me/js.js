@@ -53,9 +53,6 @@ signUpButton.addEventListener('click', () => {
     signUpSection.style.display = "flex";
     signUpSection.style.transition = "500ms";
     signUpSection.style.cursor = "pointer";
-    signUpSection.style.alignItems = "center";
-    signUpSection.style.justifyContent = "center";
-    signUpSection.style.height = "100%";
 })
 signUpHref.addEventListener('click', () => {
     signUpSection.style.display = "flex";

@@ -6,19 +6,22 @@
   font-weight: 300;
   color: white;
 }
+
+
+/* Main CSS */
 body {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   background: #000000;
-  display: flex;
-  justify-content: center;
+  display: block;
+  position: relative;
 }
 .sectionMain {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(50vw, 100vw, 100vw);
 }
 .elements {
   font-weight: 500;
@@ -28,6 +31,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.outer-container:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+.outer-container:not(:hover) {
+  transform: scale(1);
+  transition: 0.4s;
 }
 .inner-container {
   width: 1280px;
@@ -124,6 +135,10 @@ body {
     max-width: 600px;
     width: 100%;
   }
+  header {
+    position: fixed;
+    z-index: 100;
+  }
   body {
     width: auto;
     margin: 0 auto;
@@ -132,9 +147,13 @@ body {
   }
   .sectionMain {
     height: 100vh;
+    width: 100%;
+    max-width: 430px;
   }
   .outer-container {
     display: flex;
+    width: 20000vw;
+    margin-top: 100px;
   }
   .inner-container {
     width: 100%;
@@ -145,7 +164,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background: #101010;
+    background: #10101082;
     margin: 100px 10px;
   }
   .mainHead img {
@@ -191,5 +210,108 @@ body {
   .profileImage img {
     width: 100%;
     background-color: transparent;
+  }
+}
+
+/*Header CSS*/
+.menu {
+  background-color: black;
+  width: 60px;
+}
+
+
+/* CTAs */
+#loginButton {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: transparent;
+  background: black;
+  margin: 0 20px 0 0;
+  font-size: 1.2rem;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#loginButton:hover {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: transparent;
+  background: #CF5729;
+  margin: 0 20px 0 0;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 50px #CF5729);
+}
+#signUpButton {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: transparent;
+  background: #CF5729;
+  margin: 0 20px 0 0;
+  font-size: 1.2rem;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#signUpButton:hover {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: transparent;
+  background: black;
+  margin: 0 20px 0 0;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 50px #FFFFFF);
+}
+
+@media (max-width:767px) {
+  .accountButtons {
+    display: flex;
+  }
+  #loginButton {
+    width: 49%;
+    height: 50px;
+    outline: none;
+    border: transparent;
+    background: black;
+    font-size: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+    margin:20px 20px 20px 0;
+  }
+  #loginButton:hover {
+    width: 49%;
+    height: 50px;
+    outline: none;
+    border: transparent;
+    background: #CF5729;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 50px #CF5729);
+    transition: .5s;
+    cursor: pointer;
+    margin:20px 20px 20px 0;
+  }
+  #signUpButton {
+    width: 49%;
+    height: 50px;
+    outline: none;
+    border: transparent;
+    background: #CF5729;
+    font-size: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+    margin:20px 20px 20px 0;
+  }
+  #signUpButton:hover {
+    width: 49%;
+    height: 50px;
+    outline: none;
+    border: transparent;
+    background: black;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 50px #FFFFFF);
+    margin:20px 20px 20px 0;
   }
 }
